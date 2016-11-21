@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A banking form</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <meta name="More money more problems" content="the form needed to get money from Scrooge McDuck">
+<link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+
+    <h1>Welcome to McDuck loans</h1>
+    <!--header should go up here-->
+<form class="info" action="index.html" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+
+<div>
+    <!-- Applicant first name -->
+    <label id="fname">First Name:</label>
+      <input id="go" type="text" name="firstName" size="25" maxlength="30">
+</div>
+
+<div>
+    <!-- Applicant middle initial -->
+    <label id="midI">Middle Initial:</label>
+    <input type="text" name="midInt" size="25" maxlength="30">
+</div>
+
+<div>
+    <!-- Applicant last name -->
+
+    <label id="lname">Last Name:</label>
+    <input type="text" name="lastName" size="25" maxlength="30">
+</div>
+
+<div>
+    <!-- Applicant address -->
+    <label id="address">Address:</label>
+    <input type="text" name="address" size="25" maxlength="50">
+</div>
+
+    <!-- Applicant occupation -->
+<div>
+    <label id="job">Occupation:</label>
+    <select name="occupation">
+        <optgroup label="job">
+          <option value="saleryman">Saleryman</option>
+          <option value="engin">Engineer</option>
+          <option value="teacher">Teacher</option>
+          <option value="dr">Doctor</option>
+          <option value="student">Student</option>
+          <option value="ret">Retired</option>
+          <option value="unploy">Unemployed</option>
+        </optgroup>
+        </select>
+</div>
+
+<div>
+    <!-- Applicant employer -->
+    <label id="boss">Employer:</label>
+    <input type="text" name="boss" size="25" maxlength="40">
+</div>
+<div>
+
+    <!-- Employer address -->
+    <label id="bossAdd">Employer Address:</label>
+    <input type="text" name="bossAdd" size="25" maxlength="70">
+</div>
+
+  </fieldset>
+  <fieldset>
+    <legend>Loan Information</legend>
+
+
+<!--
+    Type of loan select element with these options:
+
+        Commercial
+
+        Real estate
+
+        Personal
+
+        Mortgage -->
+<div>
+    <label id="loan">Type of Loan:</label>
+    <select name="loanType">
+          <option value="commer">Commercial</option>
+          <option value="realEstate">Real Estate</option>
+          <option value="person">Personal</option>
+          <option value="mort">Mortgage</option>
+        </select>
+</div>
+<!--
+
+    Requested amount of loan
+-->
+<div>
+  <label id="amount">Amount of Loan:</label>
+  <input type="number">
+</div>
+  <!--
+    Radio button elements for loan length
+
+
+        5 years
+
+        15 years
+
+        30 years -->
+        <div>
+<label id="len">Length of Loan:</label>
+<input type="radio" name="loanLen" value="5" checked="checked"> 5 years
+  <input type="radio" name="loanLen" value="15"> 15 years
+  <input type="radio" name="loanLen" value="30"> 30 years
+</div>
+
+    <!--
+    Checkbox group for special conditions
+
+        I have a down payment
+
+        Out-of-state resident
+
+        Married
+
+        Loan will be co-signed
+
+-->
+<div>
+    <label id="spCon">Special Conditions (select all that apply):</label>
+      <input type="checkbox" name="specCon" value="downPay"> I have a down payment
+      <input type="checkbox" name="specCon" value="outSate"> Out-of-State resident
+      <input type="checkbox" name="specCon" value="marrd"> Married
+      <input type="checkbox" name="specCon" value="coSign"> Loan will be Co-Signed
+</div>
+<!--
+    A text area to allow for additional comments
+-->
+<div>
+<label id="comm">Add any additional comments:</label>
+<textarea name="comments" rows="5" columns="40"></textarea>
+</div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Contact Information</legend>
+
+
+<!--
+    Applicant email address
+-->
+<div>
+<label id="email">Email:</label>
+<input type="email" name="email" size="25" maxlength="30">
+</div>
+<!--
+    Applicant telephone number
+-->
+<div>
+<label id="telNum">Telephone Number:</label>
+<input type="text" name="tele" size="14" maxlength="20">
+</div>
+
+<!--
+    Applicant LinkedIn URL -->
+    <div>
+<label id="linkLink">LinkedIn URL:</label>
+<input type="url" name="linked">
+</div>
+
+  <input type="submit" value="Submit Application">
+
+
+</fieldset>
+
+
+</form>
+    <!--footer goes here-->
+    <footer class="footer"> &copy; 2016 Robert Tortorelli
+    </footer>
+  </body>
+</html>
