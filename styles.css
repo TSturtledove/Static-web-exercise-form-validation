@@ -49,10 +49,10 @@ input {
 }
 
 input:valid {
-  background-color: #79d279;
+  background-color: green;
 }
 input:invalid {
-  background-color: #ff944d;
+  background-color: red;
 }
 
 
