@@ -48,10 +48,10 @@ input {
   margin: auto;*/
 }
 
-input:valid {
+input.check:valid {
   background-color: green;
 }
-input:invalid {
+input.check:invalid {
   background-color: red;
 }
 
